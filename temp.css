@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 :root {
-  --primaryColor: #554d45;
+  --primaryColor: #756d64;
   --mainWhite: #fff;
-  --mainBlack: #222;
+  --mainBlack: rgb(32, 30, 30);
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
@@ -83,7 +83,7 @@ color: rgb(58, 43, 58);
     bottom: 5px;
 }
 .cart-layout{
-    position: fixed;
+    position: relative;
     top: 0px;
     right: 0px;
     height: 100%;
@@ -95,7 +95,7 @@ color: rgb(58, 43, 58);
    display: none;
 }
 .cart{
-    position: fixed;
+    position:fixed;
     top: 0px;
     right: 0px;
     height: 100%;
@@ -152,4 +152,40 @@ color: rgb(58, 43, 58);
 }
 .img-container:hover .product-img {
   opacity: 0.5;
+}
+.cart-itam .row{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding:20px;
+}
+.do{
+
+  position: fixed;
+  top: 80px;
+  z-index:3;
+  display: none;
+  background:wheat;
+  width: 70%;
+  height: auto;
+  right: 20%;
+  
+  
+}
+#selected{
+padding: 50px;
+height: 500px;
+z-index:4;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.totals{
+  float: right;
+  font-size: 30px;
+  color: blue;
+  padding: 20px;
+  border: 2px solid black;
 }
